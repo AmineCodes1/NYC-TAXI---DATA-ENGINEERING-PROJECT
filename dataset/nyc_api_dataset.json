@@ -1,0 +1,28 @@
+{
+	"name": "nyc_api_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "NYC_WEB_API",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_month": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/green_tripdata_2025-@{if(less(int(dataset().p_month),10),concat('0',string(int(dataset().p_month))),string(int(dataset().p_month)))}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

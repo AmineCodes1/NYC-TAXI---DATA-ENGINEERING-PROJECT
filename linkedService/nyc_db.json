@@ -1,0 +1,13 @@
+{
+	"name": "nyc_db",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-7405607601156083.3.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/f4029797-b60c-4dd3-bf1c-0adc692bf60a/resourceGroups/NYC_Taxi_Project/providers/Microsoft.Databricks/workspaces/databricks_nyc_taxi"
+		}
+	}
+}

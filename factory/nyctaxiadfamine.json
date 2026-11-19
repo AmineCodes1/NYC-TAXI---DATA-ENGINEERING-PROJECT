@@ -1,0 +1,16 @@
+{
+	"name": "nyctaxiadfamine",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "spaincentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "20b72ec2-527b-4e7b-9cc6-e5445572f85f",
+		"tenantId": "27b1b270-e40a-489a-b82c-2863ffa933bf"
+	}
+}
